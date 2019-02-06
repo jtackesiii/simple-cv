@@ -1,5 +1,5 @@
 ## Languages
 
-    * Native fluency: English
-    * High Proficiency: Hindi
-    * Reading: Sanskrit, French
+* Native fluency: English
+* High Proficiency: Hindi
+* Reading: Sanskrit, French
