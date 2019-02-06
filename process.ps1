@@ -37,7 +37,7 @@ Add-Content .\tmp\metadata.yml $metadata
 $datestring = "date: " + (Get-Date -Format "yyyy-MM-dd")
 Add-Content .\tmp\metadata.yml $datestring
 
-<# 
+<#
 # 4. Set templates
 This is a future feature that takes the `mode` key and sets
 the CV to markdown or yaml depending.
@@ -45,7 +45,7 @@ the CV to markdown or yaml depending.
 
 # 5. Set headings style
 if(cat .\tmp\metadata.yml | Select-String -Pattern "^\s*headings: margin"){
-    Add-Content .\tmp\metadata.yml "margin-headings: true"
+    Add-Content .\tmp\metadata.yml "margin-heading: true"
 }
 
 # 6. Close metadata block.
@@ -54,8 +54,8 @@ Add-Content .\tmp\metadata.yml "---"
 # 7. Concatenate sections into one large Markdown file.
 if(Test-Path -Path sections.txt -PathType Leaf){
     " " | Out-File .\tmp\raw-md.md -Encoding utf8
-    cat .\sections.txt | 
-    Select-String -Pattern "^[^#]" | 
+    cat .\sections.txt |
+    Select-String -Pattern "^[^#]" |
     foreach {
         $md_file = cat "sections\$($_).md" -Encoding utf8
         Add-Content .\tmp\raw-md.md $md_file
@@ -68,8 +68,8 @@ if(Test-Path -Path sections.txt -PathType Leaf){
 
 # 8. Grab filename.
 if(cat .\tmp\metadata.yml | Select-String -Pattern "^\s*filename:"){
-    $pdf_filename = (Get-Content .\tmp\metadata.yml | 
-        Select-String -Pattern "^\s*filename:" | 
+    $pdf_filename = (Get-Content .\tmp\metadata.yml |
+        Select-String -Pattern "^\s*filename:" |
         Out-String).Split(" ")[1]
 } else {
     $pdf_filename = "CV"
