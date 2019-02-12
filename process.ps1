@@ -91,6 +91,7 @@ $pandoc_html_args = @(
     "--metadata-file=tmp\metadata.yml",
     "--from=markdown+yaml_metadata_block+raw_tex",
     "--output=docs\index.html",
+    "--output=..\nicktackes\layouts\partials\simple-cv.html",
     ".\tmp\raw-md.md"
 )
 $pandoc_pdf_args = @(
@@ -99,6 +100,7 @@ $pandoc_pdf_args = @(
     "--pdf-engine=xelatex",
     "--metadata-file=tmp\metadata.yml",
     "--from=markdown+yaml_metadata_block+raw_tex",
+    "--output=..\nicktackes\static\documents\$($pdf_filename).pdf",
     "--output=docs\$($pdf_filename).pdf",
     ".\tmp\raw-md.md"
 )
