@@ -1,4 +1,4 @@
-## Academic Positions
+### Academic Positions
 
 * Spring 2019
   * Teaching Assistant -- "Millenium: Apocalypse and Utopia" (Elizabeth Castelli, Religion)

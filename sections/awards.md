@@ -1,4 +1,4 @@
-## Competitive Scholarships and Honors
+### Competitive Scholarships and Honors
 * 2018
   * Fulbright-Hays Doctoral Dissertation Research Award
   * AIIS Junior Research Fellowship (declined)

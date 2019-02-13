@@ -1,4 +1,4 @@
-## Education
+### Education
 
 * **Columbia University**
   * PhD, 2021 (anticipated), Department of Religion
