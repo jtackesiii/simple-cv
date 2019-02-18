@@ -79,7 +79,7 @@ $pandoc_tex_args = @(
 )
 $pandoc_html_args = @(
     "--standalone",
-    "--template=templates\html.html",
+    "--template=templates\html-new.html",
     "--metadata-file=tmp\metadata.yml",
     "--from=markdown+yaml_metadata_block+raw_tex",
     "--output=docs\index.html",
