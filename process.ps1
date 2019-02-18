@@ -83,7 +83,7 @@ $pandoc_html_args = @(
     "--metadata-file=tmp\metadata.yml",
     "--from=markdown+yaml_metadata_block+raw_tex",
     "--output=docs\index.html",
-    "--output=..\nicktackes\layouts\partials\simple-cv.html",
+    "--output=..\nicktackes\layouts\partials\CV.html",
     ".\tmp\raw-md.md"
 )
 $pandoc_pdf_args = @(
