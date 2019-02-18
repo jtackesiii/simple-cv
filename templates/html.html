@@ -117,68 +117,57 @@
       color: $html-fonts.colors.navbar-items$;
     }
     $endif$
-
     $if(markers)$
     #cvBody ul {
       list-style: none;
       padding: 0;
     }
-
     #cvBody li {
       padding-left: 1.3em;
     }
-
     #cvBody li:before {
       content: "$markers.level-1$";
       display: inline-block;
       margin-left: -1.3em;
       width: 1.3em;
     }
-
     #cvBody ul>li>ul>li:before {
       content: "$markers.level-2$";
     }
-
     #cvBody ul>li>ul>li>ul>li:before {
       content: "$markers.level-3$";
     }
     $endif$
-
     $if(smallcaps-headings)$
     h1, h2, h3, h4, h5, h6 {
       font-weight: normal;
       font-variant: small-caps;
     }
     $endif$
-
     $if(bold-as-smallcaps)$
     strong {
       font-weight: normal;
       font-variant: small-caps;
     }
     $endif$
-
     .latex sub, .latex sup {
       text-transform: uppercase;
     }
-
     .latex sub {
       vertical-align: -0.4ex;
       margin-left: -0.1667em;
       margin-right: -0.125em;
     }
-
     .latex, .latex sub {
       font-size: 1em;
     }
-
     .latex sup {
       font-size: 0.75em;
       vertical-align: -0.15em;
       margin-left: -0.36em;
       margin-right: -0.15em;
     }
-  </style> -->
+  </style>
 
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>

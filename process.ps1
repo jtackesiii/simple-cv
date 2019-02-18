@@ -1,23 +1,15 @@
 <#
 Based on https://github.com/plain-plain-text/simple-cv/blob/master/process.sh
-
 This PowerShell script processes the files in this repository to generate
 a few temporary files and a final pdf and html file for a CV.
-
 If you cannot get this script to run on your local computer, as an initial, security-risky
 solution, run this command in Powershell:
-
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
-
 At the end of your CV-ing, you can set the policy back to the Windows default:
-
 Set-ExecutionPolicy -ExecutionPolicy Restricted -Scope CurrentUser
-
 Alternatively, you can run powershell itself with different execution policy.
 To do that, open a command prompt and run:
-
 powershell -ExecutionPolicy Unrestricted
-
 For the duration of that shell, the policy will be unrestricted.
 #>
 
@@ -100,8 +92,8 @@ $pandoc_pdf_args = @(
     "--pdf-engine=xelatex",
     "--metadata-file=tmp\metadata.yml",
     "--from=markdown+yaml_metadata_block+raw_tex",
-    "--output=..\nicktackes\static\documents\$($pdf_filename).pdf",
     "--output=docs\$($pdf_filename).pdf",
+    "--output=..\nicktackes\static\documents\$($pdf_filename).pdf",
     ".\tmp\raw-md.md"
 )
 pandoc $pandoc_tex_args
