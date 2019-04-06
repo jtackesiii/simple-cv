@@ -92,8 +92,16 @@ $pandoc_pdf_args = @(
     "--pdf-engine=xelatex",
     "--metadata-file=tmp\metadata.yml",
     "--from=markdown+yaml_metadata_block+raw_tex",
-    "--output=docs\$($pdf_filename).pdf",
     "--output=..\nicktackes\static\documents\$($pdf_filename).pdf",
+    ".\tmp\raw-md.md"
+)
+$pandoc_pdf_args = @(
+    "--standalone",
+    "--template=templates\tex-windows.tex",
+    "--pdf-engine=xelatex",
+    "--metadata-file=tmp\metadata.yml",
+    "--from=markdown+yaml_metadata_block+raw_tex",
+    "--output=docs\$($pdf_filename).pdf",
     ".\tmp\raw-md.md"
 )
 pandoc $pandoc_tex_args
