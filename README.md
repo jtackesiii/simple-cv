@@ -10,4 +10,4 @@ Furthermore, it even allows you to host them on GitHub Pages.
 Forked from plain-plain-text.
 
 ToDO:
-- tinker with tex2pdf file clearing.
+- fix process.ps1 - will not output to multiple locations.

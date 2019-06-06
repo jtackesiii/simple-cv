@@ -12,4 +12,4 @@
 * 2014
   * Academic Year FLAS Fellowship: Hindi
 * 2013
-  * Fulbright-Nehru Fellowship -- English Teaching Assistant -- New Delhi, India
+  * Fulbright-Nehru Fellowship -- English Teaching Assistantship -- New Delhi, India
