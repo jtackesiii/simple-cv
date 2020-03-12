@@ -1,4 +1,6 @@
 ## Competitive Scholarships and Honors
+* 2020
+  * Certificate of the Southern Asian Institute (Columbia University)
 * 2018
   * Fulbright-Hays Doctoral Dissertation Research Award
   * AIIS Junior Research Fellowship (declined)

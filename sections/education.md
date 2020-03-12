@@ -1,8 +1,9 @@
 ## Education
 
-* **Columbia University**
-  * PhD, 2021 (anticipated), Department of Religion
-  * MA, 2016, Department of Religion
+* **Columbia University,** Department of Religion
+  * PhD, 2023 (anticipated)
+  * MPhil, 2019
+  * MA, 2016
 * **Carthage College**
   * BA, 2013, Religion and Great Ideas
 * **Other**
