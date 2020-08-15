@@ -1,5 +1,6 @@
 ## Teaching and Academic Service
 
+* Lead Teaching Fellow (Center for Teaching and Learning, Columbia University, 2020-2021)
 * Teaching Assistant (Columbia University, 2018-2019)
   * "Millenium: Apocalypse and Utopia" (Elizabeth Castelli, Religion)
   * "East Asian Buddhism" (Michael Como, Religion)
