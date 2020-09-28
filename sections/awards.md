@@ -1,17 +1,17 @@
 ## Competitive Scholarships and Honors
 * 2020
-  * Certificate of the Southern Asian Institute (Columbia University)
+  - Certificate of the Southern Asian Institute (Columbia University)
 * 2018
-  * Fulbright-Hays Doctoral Dissertation Research Award
-  * AIIS Junior Research Fellowship (declined)
+  - Fulbright-Hays Doctoral Dissertation Research Award
+  - AIIS Junior Research Fellowship (declined)
 * 2017
-  * AIIS Language Fellowship: Hindi
-  * Summer FLAS Fellowship: Hindi
+  - AIIS Language Fellowship: Hindi
+  - Summer FLAS Fellowship: Hindi
 * 2016
-  * Summer FLAS Fellowship: Hindi
+  - Summer FLAS Fellowship: Hindi
 * 2015
-  * Academic Year FLAS Fellowship: Hindi
+  - Academic Year FLAS Fellowship: Hindi
 * 2014
-  * Academic Year FLAS Fellowship: Hindi
+  - Academic Year FLAS Fellowship: Hindi
 * 2013
-  * Fulbright-Nehru Fellowship -- English Teaching Assistantship -- New Delhi, India
+  - Fulbright-Nehru Fellowship -- English Teaching Assistantship -- New Delhi, India
