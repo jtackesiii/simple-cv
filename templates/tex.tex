@@ -12,6 +12,7 @@
   ]{memoir}
 
 \usepackage{enumitem}
+\usepackage{longtable}
 %%% Font declarations.
 %%% please see Fonts-README.md in this repo for more information.
 \usepackage{fontspec} % Choose fonts intelligently
@@ -113,12 +114,12 @@ $endif$
 \renewcommand{\@seccntformat}[1]{}
 \makeatother %%% exit macro mode.
 
-%%% Subsection styling. 
+%%% Subsection styling.
 %%% Should someone (me) include subsections in their CV, things get complex.
 
 \setsubsecheadstyle{\normalsize} %%% Subheads shouldn’t be big.
 \setaftersubsecskip{0em} %%% Subheads should have no space after them
-%%% New problem: \subsection should have no top margin, so it’s in line w/ the 
+%%% New problem: \subsection should have no top margin, so it’s in line w/ the
 %%% section header. But if that’s the case, when a subsection appears later in
 %%% the section, it looks just like a regular line. We need subsection to have
 %%% conditional beforeskips, based on whether it’s the first subsection or not.
@@ -135,7 +136,7 @@ $else$
 $endif$
 
 
-%%% List styling. 
+%%% List styling.
 %%% They behave differently based on margin or regular headings.
 \setlist[itemize]{nosep} %%% No gaps between list items.
 $if(margin-heading)$

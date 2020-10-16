@@ -1,5 +1,6 @@
 ## Languages
-
-* English (native)
-* Hindi
-* Sanskrit (reading)
+<div id="langTable">
+|   |   |   |
+| :--- | :--- | :----- |
+| English | Hindi | Sanskrit (reading) |
+</div>

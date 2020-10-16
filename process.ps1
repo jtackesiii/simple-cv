@@ -92,7 +92,16 @@ $pandoc_pdf_args = @(
     "--pdf-engine=xelatex",
     "--metadata-file=tmp\metadata.yml",
     "--from=markdown+yaml_metadata_block+raw_tex",
-    "--output=..\nicktackes\static\documents\$($pdf_filename).pdf",
+    "--output=..\nicktackes\static\documents\latex.pdf",
+    ".\tmp\raw-md.md"
+)
+$pandoc_docx_args = @(
+    "--standalone",
+    "--pdf-engine=xelatex",
+    "--metadata-file=tmp\metadata.yml",
+    "--from=markdown+yaml_metadata_block+raw_tex",
+    "--reference-doc=/Users/jtack/AppData/Roaming/pandoc/cv-reference.docx",
+    "--output=..\nicktackes\static\documents\$($pdf_filename).docx",
     ".\tmp\raw-md.md"
 )
 pandoc $pandoc_tex_args
@@ -100,4 +109,27 @@ pandoc $pandoc_tex_args
 pandoc $pandoc_html_args
 ".html saved as .\docs\index.html"
 pandoc $pandoc_pdf_args
-".pdf saved as ..\nicktackes\static\documents\$($pdf_filename).pdf"
+".pdf saved as ..\nicktackes\static\documents\latex.pdf"
+pandoc $pandoc_docx_args
+".docx saved as ..\nicktackes\static\documents\$($pdf_filename).docx"
+
+$documents_path = '..\nicktackes\static\documents\'
+
+$word_app = New-Object -ComObject Word.Application
+"writing .docx to .pdf"
+
+# This filter will find .doc as well as .docx documents
+Get-ChildItem -Path $documents_path -Filter *.doc? | ForEach-Object {
+
+    $document = $word_app.Documents.Open($_.FullName)
+
+    $pdf_filename = "$($_.DirectoryName)\$($_.BaseName).pdf"
+
+    $document.SaveAs([ref] $pdf_filename, [ref] 17)
+
+    $document.Close()
+
+}
+
+$word_app.Quit()
+"done!"
