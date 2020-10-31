@@ -1,6 +1,6 @@
 ## Languages
 <div id="langTable">
-|   |   |   |
-| :--- | :--- | :----- |
-| English | Hindi | Sanskrit (reading) |
+|   |   |
+| :--- | :--------- |
+| Hindi | Sanskrit (reading) |
 </div>
