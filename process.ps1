@@ -1,18 +1,3 @@
-<#
-Based on https://github.com/plain-plain-text/simple-cv/blob/master/process.sh
-This PowerShell script processes the files in this repository to generate
-a few temporary files and a final pdf and html file for a CV.
-If you cannot get this script to run on your local computer, as an initial, security-risky
-solution, run this command in Powershell:
-Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
-At the end of your CV-ing, you can set the policy back to the Windows default:
-Set-ExecutionPolicy -ExecutionPolicy Restricted -Scope CurrentUser
-Alternatively, you can run powershell itself with different execution policy.
-To do that, open a command prompt and run:
-powershell -ExecutionPolicy Unrestricted
-For the duration of that shell, the policy will be unrestricted.
-#>
-
 # 1. Reset tmp directory
 if(!(Test-Path -Path .\tmp)){
     New-Item -ItemType directory -Path .\tmp
@@ -100,7 +85,7 @@ $pandoc_docx_args = @(
     "--pdf-engine=xelatex",
     "--metadata-file=tmp\metadata.yml",
     "--from=markdown+yaml_metadata_block+raw_tex",
-    "--reference-doc=/Users/jtack/AppData/Roaming/pandoc/cv-reference.docx",
+    "--reference-doc=/Users/jtack/pandoc/cv-reference.docx",
     "--output=..\nicktackes\static\documents\$($pdf_filename).docx",
     ".\tmp\raw-md.md"
 )
