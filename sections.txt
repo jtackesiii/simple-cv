@@ -3,6 +3,7 @@
 # the first one, “fields,” refers to a file called
 # “sections/fields.md.”
 education
+certificates
 languages
 awards
 conferences
