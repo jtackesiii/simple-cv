@@ -2,5 +2,5 @@
 <div id="langTable">
 |   |   |
 | :--- | :--------- |
-| Hindi | Sanskrit (reading) |
+| English | Hindi |
 </div>
