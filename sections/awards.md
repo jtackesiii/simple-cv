@@ -1,6 +1,8 @@
 ## Competitive Scholarships and Honors
 
 +------+-----------------------------------------------------------------------+
+| 2021 | Columbia University IRCPL Dissertation Fellowship  |
++------+-----------------------------------------------------------------------+
 | 2018 | Fulbright-Hays Doctoral Dissertation Research Award: Mathura, India\  |
 |      | AIIS Junior Research Fellowship (declined)                            |
 +------+-----------------------------------------------------------------------+
